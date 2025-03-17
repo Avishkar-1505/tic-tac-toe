@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <dialog class="modal start">
+        
+            <div class="dia-header">
+                <h1>Game Start</h1>
+            </div>
+
+            <form class="init">
+                <div>
+                    <h2>Enter Player Names</h2>
+                </div>
+                
+
+                <div>
+                    <label for="p1"> X => Player 1 </label>
+                    <input type="text" name="p1" id="p1" required>
+                </div>
+
+                <div>
+                    <label for="p2"> O => Player 2 </label>
+                    <input type="text" name="p2" id="p2" required>
+                </div>
+
+                <div><button type="submit">Start</button></div>
+            </form>
+    </dialog>
+
+
+
+    <dialog class="modal end">
+        <div class="reset">
+            <h2>Game Over</h2>
+            <h2 id="win"></h2>
+            <button id="restart">Restart Game</button>
+        </div>
+    </dialog>
+
+    <div class="container">
+        <h1 class="turn"></h1>
+        <div class="gameboard">
+            <div class="box" x="0" y="0"></div>
+            <div class="box" x="0" y="1"></div>
+            <div class="box" x="0" y="2"></div>
+            <div class="box" x="1" y="0"></div>
+            <div class="box" x="1" y="1"></div>
+            <div class="box" x="1" y="2"></div>
+            <div class="box" x="2" y="0"></div>
+            <div class="box" x="2" y="1"></div>
+            <div class="box" x="2" y="2"></div>
+        </div>
+    </div>
+</body>
+</html>
